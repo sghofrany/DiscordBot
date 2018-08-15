@@ -42,7 +42,7 @@ public class MessageListener extends ListenerAdapter {
 
                     event.getChannel().sendMessage(embedBuilder.build()).queue();
 
-                    event.getGuild().getTextChannelById(channelId).delete().queueAfter(10, TimeUnit.SECONDS);
+                    event.getGuild().getTextChannelById(channelId).delete().queueAfter(10, TimeUnit.MINUTES);
 
                 }
             }
@@ -68,7 +68,7 @@ public class MessageListener extends ListenerAdapter {
 
                     event.getChannel().sendMessage(embedBuilder.build()).queue();
 
-                    event.getGuild().getTextChannelById(channelId).delete().queueAfter(10, TimeUnit.SECONDS);
+                    event.getGuild().getTextChannelById(channelId).delete().queueAfter(10, TimeUnit.MINUTES);
 
                 }
             }
